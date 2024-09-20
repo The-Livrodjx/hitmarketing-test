@@ -1,0 +1,202 @@
+main {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main img {
+  width: 160px;
+  height: 61.02px;
+  margin-bottom: 58px;
+}
+
+div.couple-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 38px;
+}
+
+div.couple-btns a {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 200;
+  width: 200px;
+  height: 40px;
+  background: linear-gradient(
+    to left,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+  margin: 7px 10px;
+  filter: drop-shadow(0 4px 6px rgba(17, 17, 17, 0.4));
+}
+
+div.couple-btns a:hover {
+  opacity: 0.8;
+}
+
+div.title {
+  color: #fff;
+  margin-bottom: 35px;
+}
+
+div.title h1 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 3px;
+  filter: drop-shadow(0 4px 6px rgba(17, 17, 17, 0.4));
+}
+
+div.title div.separator {
+  width: 122px;
+  height: 2.5px;
+  background-color: var(--separator-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 4px 6px rgba(17, 17, 17, 0.4));
+}
+
+div.title div.separator div.separator-content {
+  width: 20px;
+  height: 6px;
+  background: linear-gradient(
+    to left,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+}
+
+form.text {
+  width: 680px;
+  height: 435px;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 4px 6px rgba(17, 17, 17, 0.4));
+}
+
+form.text div.couple-input {
+  display: flex;
+}
+form.text p {
+  color: #fff;
+  padding: 21px;
+  font-weight: 100;
+  line-height: 1.5rem;
+}
+
+form.text input {
+  width: 292px;
+  height: 46px;
+  border-radius: 5px;
+  margin: 8px;
+  border: none;
+  padding: 15px;
+}
+
+form.text textarea {
+  margin-top: 10px;
+  padding: 15px;
+  width: 600px;
+  height: 200px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 15px;
+}
+
+form.text button {
+  background-color: var(--background-color);
+  width: 160px;
+  border-radius: 10px;
+  height: 40px;
+  text-transform: uppercase;
+  font-weight: 200;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  filter: drop-shadow(0 4px 6px rgba(17, 17, 17, 0.4));
+}
+
+form.text button:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  main img {
+    width: 120px;
+    height: 45.77px;
+    margin-bottom: 40px;
+  }
+
+  div.couple-btns {
+    flex-direction: column;
+  }
+
+  form.text {
+    width: 80%;
+    height: auto;
+    padding: 10px;
+  }
+
+  form.text div.couple-input {
+    width: 82%;
+    flex-direction: column;
+  }
+
+  form.text textarea {
+    width: 80%;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main img {
+    width: 80px;
+    height: 30.04px;
+    margin-bottom: 30px;
+  }
+
+  div.title h1 {
+    font-size: 18px;
+  }
+
+  div.title div.separator {
+    width: 70px;
+  }
+
+  form.text {
+    width: 100%;
+  }
+
+  form.text input {
+    width: 95%;
+  }
+
+  form.text div.couple-input {
+    width: 85%;
+    flex-direction: column;
+  }
+
+  form.text textarea {
+    height: 100px;
+  }
+
+  form.text button {
+    width: 100%;
+  }
+}
